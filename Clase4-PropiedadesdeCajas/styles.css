@@ -1,0 +1,302 @@
+body {
+    margin-top: 50px;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    background: #fff;
+}
+
+#caja1{
+    display: flex;
+    height: 768px;
+    width: 1360px;
+    align-items: center;  
+    justify-content: flex-start;
+
+    background-color: rgb(31, 29, 29);
+    background-image: url("./imgs/man-working-night\ 1.png");
+    background-size: 900px;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+
+#caja1 h1 {
+    color: #fff;
+    font-family: "Questrial", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 90px;
+    margin-bottom: 40px;
+    line-height: 1.1;
+}
+
+#caja1 p{
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    color:white;    
+    margin-bottom: 40px;
+    max-width: 90%;
+}
+
+.textoCaja1 {
+    max-width: 700px; 
+    margin-left: 100px;
+}
+
+#caja1 button{
+    width: 125px;
+    height: 40px;
+    font-family: "Manrope", sans-serif;
+    font-weight: 675;
+    font-optical-sizing: auto;
+    color:black;
+}
+
+
+/* Caja 2 */
+
+#caja2{
+    display: flex;
+    height: 768px;
+    width: 1360px;
+    align-items: center;  
+    justify-content: flex-start;
+    margin-top: 50px;
+
+    background-color: rgb(235, 235, 235);
+    background-image: url("./imgs/graphics-1.png");
+    background-size: 600px;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+#caja2 h1{
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 64px;
+    font-style: normal;
+}
+
+#caja2 p{
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 40px;    
+}
+
+.textoCaja2 {
+    max-width: 650px; 
+    margin-left: 100px;
+}
+
+#caja2 button{
+    width: 200px;
+    height: 45px;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    color:white;
+    background-color: black;
+}
+
+/* Caja 3 */
+
+#caja3{
+    display: flex;
+    height: 768px;
+    width: 1360px;
+    align-items: center;  
+    justify-content: flex-start;
+    margin-top: 50px;
+
+    background-color: black;
+    background-image: url("./imgs/buildings.png");
+    background-size: 650px;
+    background-repeat: no-repeat;
+    background-position: right 80px bottom; 
+}
+
+#caja3 h1 {
+    color: #fff;
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 80px;
+    margin-bottom: 40px;
+    line-height: 1.1;
+}
+
+#caja3 p{
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 15px;
+    color:white;    
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+
+.textoCaja3 {
+    max-width: 500px;
+    margin-bottom: 60px; 
+    margin-left: 100px;
+}
+
+#caja3 button{
+    width: 120px;
+    height: 60px;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 675;
+    font-size: 15px;
+    color:black;
+    background-color: white;
+}
+
+/* Caja 4 */
+
+#caja4{
+    display: flex;
+    height: 768px;
+    width: 1360px;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    margin-top: 50px;
+
+    background-color: rgb(31, 29, 29);
+    background-image: url("./imgs/crowd.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+#caja4 h1{
+    font-family: "Lavishly Yours", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 45px;
+    color: white;    
+}
+
+#caja4 p{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    font-style: normal;
+    color: white;
+}
+
+
+/* Caja 5*/
+
+#caja5{
+    display: flex;
+    height: 768px;
+    width: 1360px;
+    align-items: center;  
+    justify-content: flex-start;
+    margin-top: 50px;
+
+    background-color: rgb(0, 1, 32);
+    background-image: url("./imgs/corners.png");
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+
+#caja5 h1 {
+    color: #fff;
+    font-family: "Questrial", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    margin-bottom: 40px;
+    line-height: 1.3;
+}
+
+#caja5 p{
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+    color:rgb(167, 166, 166);    
+    margin-bottom: 40px;
+    line-height: 1.5;
+    max-width: 85%;
+}
+
+.textoCaja5 {
+    max-width: 650px; 
+    padding-bottom: 100px;
+    margin-left: 100px;
+}
+
+#caja5 img{
+    margin-left: 30px;
+    width: 500px;
+    height: 500px;
+    margin-left: 40px;
+    margin-top: 100px;
+}
+
+/* Caja 6*/
+
+
+#caja6{
+    display: flex;
+    height: 768px;
+    width: 1360px;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    background-color: rgb(238, 245, 254);
+    background-image: url("./imgs/rocket.png");
+    background-size: 700px;
+    background-repeat: no-repeat;
+    background-position: right 60px center;
+}
+
+
+#caja6 h1 {
+    color: #3e3e75;
+    font-family: "Questrial", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 55px;
+    text-shadow: 2px 2px  rgba(102, 102, 102, 0.5);
+    margin-bottom: 40px;
+    line-height: 1.1;
+}
+
+#caja6 h1 strong{
+    color: #5876fd;
+}
+
+#caja6 p{
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 15px;
+    font-style: normal;
+    color:rgb(0, 0, 0);    
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+
+.textoCaja6 {
+    max-width: 700px;
+    padding-bottom: 140px; 
+    margin-left: 100px;
+}

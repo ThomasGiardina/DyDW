@@ -1,0 +1,27 @@
+.bg-forest-1{
+  background-image: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)), url('./imgs/bosque.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.seccion9{
+  background-image: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)), url("./imgs/bosque.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+  .fs-0  { font-size: 4.5rem !important; }
+  .fs-01 { font-size: 3.5rem !important; }
+}
+
+@media (min-width: 768px) {
+  header {
+    background-image: url('./imgs/rainbow-between-mountains.png');
+    background-size: contain;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+  }
+}
+

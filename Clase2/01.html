@@ -1,0 +1,82 @@
+<!--
+Ejercicio 1: Página web personal básica 
+
+Objetivo: Crear una página web personal simple con encabezado, navegación, sección principal y pie de página. 
+
+Contenido: 
+    -Encabezado: Logotipo, nombre y breve descripción. 
+    -Navegación: Enlaces a diferentes secciones de la página (inicio, sobre mí, proyectos, contacto). 
+    -Sección principal: Un artículo con información sobre ti, tus habilidades e intereses. 
+    -Pie de página: Información de contacto, derechos de autor y redes sociales. 
+
+Etiquetas a utilizar: 
+header, nav, main, article, section, footer 
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Página web personal – Thomas Giardina</title>
+</head>
+<body>
+    <header id="inicio">
+        <img src="./imgs/logotipo1.jpg" alt="Logotipo" width="100">
+        <h1>Thomas Giardina</h1>
+        <p>Estudiante de Ingenieria en Informatica en la UADE, con interes en desarrollo de software y nuevas tecnologías.  </p>
+    </header>
+
+    <nav aria-label="Navegación principal">
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre mi</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <article>
+                <p>
+                    Hola, soy Thomas Giardina. Actualmente estudio Ingenieria en Informatica en la UADE.
+                    Me interesa el desarrollo de software, el desarrollo web, la inteligencia artificial y la creacion de proyectos <br>
+                    que resuelvan problemas del mundo real. En mi tiempo libre me gusta viajar, sacar fotos y jugar al futbol. 
+                    Tambien disfruto aprender cosas nuevas por mi cuenta y experimentar con proyectos personales.
+                </p>
+            </article>
+        </section>
+
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <article>
+                <h3>Habilidades tecnicas</h3>
+                <ul>
+                    <li>Programacion en Python y Java</li>
+                    <li>Desarrollo web con HTML, CSS y JavaScript</li>
+                    <li>Gestion de bases de datos SQL</li>
+                </ul>
+
+                <h3>Habilidades personales</h3>
+                <ul>
+                    <li>Trabajo en equipo y liderazgo</li>
+                    <li>Comunicación efectiva</li>
+                    <li>Aprendizaje rápido y adaptación</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
+    <footer id="contacto">
+        <h2>Contacto</h2>
+        <p>Correo: <a href="mailto:tgiardina@uade.edu.ar">tgiardina@uade.edu.ar</a></p>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/thomas-agustin-giardina-484a86324/" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/thomasgiardina" target="_blank">GitHub</a></li>
+        </ul>
+        <p>&copy; 2025 Thomas Giardina. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

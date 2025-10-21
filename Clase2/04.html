@@ -1,0 +1,130 @@
+<!--
+Ejercicio 4: Sitio web de noticias 
+
+Objetivo: Crear una página web de noticias con diferentes secciones y artículos, utilizando etiquetas para organizar el contenido.
+
+Contenido: 
+
+    -Encabezado: Logotipo del sitio web, nombre. 
+
+    -Navegación: Enlaces a las diferentes secciones de noticias (nacional, internacional, deportes, economía). 
+
+Sección principal: 
+
+    -Section: Artículos destacados de la sección seleccionada. 
+
+    -Article: Cada artículo con título, imagen, resumen y enlace a la noticia completa. 
+
+    -Aside: Publicidad o banners informativos. 
+
+    -Pie de página: Información de contacto, política de privacidad y términos de uso. 
+
+
+
+Etiquetas a utilizar: 
+
+header, nav, main, section, article, aside, figure, figcaption, footer 
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio web de noticias</title>
+</head>
+<body>
+    <header>
+        <img src="./imgs/logo.webp" alt="Logotipo" width="100">
+        <h1>Infobae</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#nacional">Nacional</a></li>
+            <li><a href="#internacional">Internacional</a></li>
+            <li><a href="#deportes">Deportes</a></li>
+            <li><a href="#economia">Economía</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="nacional">
+            <h2>Noticias Nacionales</h2>
+            <article>
+                <h3>Diputados rechazó el veto de Milei a la Ley de Emergencia en Discapacidad</h3>
+                <figure>
+                    <img src="./imgs/veto.avif" alt="Imagen de la Camara de Diputados">
+                    <figcaption>Cámara de Diputados durante la votación que revocó el veto presidencial</figcaption>
+                </figure>
+                <p>La Cámara de Diputados rechazó el veto del presidente Javier Milei a la Ley de Emergencia en Discapacidad, con un contundente resultado de 172 votos a favor, 73 en contra y 2 abstenciones. Esta mayoría especial de dos tercios permitió revocar el veto presidencial y restituir la norma, <br>
+                    que insta a actualizar los aranceles por inflación y establecer una pensión no contributiva equivalente al 70 % del haber mínimo, en sintonía con el costo fiscal que la Casa Rosada había marcado como excesivo.</p>
+                <a href="https://www.infobae.com/politica/2025/08/20/la-oposicion-logro-rechazar-el-veto-de-milei-a-la-ley-de-emergencia-en-discapacidad-en-diputados/" target="_blank">Leer más sobre la noticia</a>
+            </article>
+        </section>
+
+        <section id="internacional">
+            <h2>Noticias Internacionales</h2>
+            <article>
+                <h3>El Reino Unido golpea redes de criptomonedas</h3>
+                <figure>
+                    <img src="./imgs/cripto.avif" alt="Imagen de CriptoMonedas">
+                    <figcaption>Representación de criptomonedas utilizadas en operaciones financieras internacionales</figcaption>
+                </figure>
+                <p>El Reino Unido lanzó este miércoles un nuevo paquete de sanciones dirigido a una banca y redes de criptomonedas en Kirguistán que, según Londres,<br>
+                    facilitan a Rusia evadir las sanciones occidentales impuestas tras la invasión de Ucrania.</p>
+                <a href="https://www.infobae.com/america/mundo/2025/08/20/el-reino-unido-golpea-redes-de-criptomonedas-que-ayudan-a-rusia-a-escapar-las-sanciones/" target="_blank">Leer más sobre la noticia</a>
+            </article>
+        </section>
+
+        <section id="deportes">
+            <h2>Noticias de Deportes</h2>
+            <article>
+                <h3>Diablito Echeverri llegó a Alemania</h3>
+                <figure>
+                    <img src="./imgs/TUVUN2LLD5FBPEHQMBAQYE2BUE.avif" alt="El Dialito llegando a Alemania">
+                    <figcaption>El Dialito en el aeropuerto de Alemania</figcaption>
+                </figure>
+                <p>Claudio “Diablito” Echeverri, la joven promesa argentina surgida en River Plate, viajó a Alemania para sumarse al Bayer Leverkusen. Tras pasar con éxito la revisión médica, firmará su contrato con el club de la Bundesliga, al que llega cedido desde el Manchester City por un año y<br>
+                    sin opción de compra. El Leverkusen, que disputará la Champions League, se hará cargo de su salario y le ofrecerá al futbolista de 19 años la posibilidad de sumar minutos en un equipo competitivo.</p>
+                <a href="https://www.infobae.com/deportes/2025/08/20/el-diablito-echeverri-llego-a-alemania-se-hizo-la-revision-medica-y-firmara-contrato-con-su-nuevo-club/" target="_blank">Leer más sobre la noticia</a>
+            </article>
+        </section>
+
+        <section id="economia">
+            <h2>Noticias de Economía</h2>
+            <article>
+                <h3>YPF redefine su proyecto de GNL</h3>
+                <figure>
+                    <img src="./imgs/ypf.avif" alt="Imagen de barco de licuefacción de GNL">
+                    <figcaption>Barco de licuefacción de GNL similar a los que YPF planea instalar en la costa de Río Negro.</figcaption>
+                </figure>
+                <p>YPF está efectuando un giro estratégico en el proyecto Argentina LNG, que busca convertir al país en un exportador de gas natural licuado (GNL). Inicialmente, se planeaba instalar dos barcos licuefactores en la costa de Río Negro en asociación con Shell. Sin embargo, la empresa decidió mantener solo uno, 
+                    lo que reduce la capacidad esperada; en lugar de producir 12 MTPA (millones de toneladas por año), la nueva fase aportará 6 MTPA, aunque permitirá mayor sinergia con las etapas posteriores del plan</p>
+                <a href="https://www.infobae.com/economia/2025/08/20/ypf-redefine-su-proyecto-de-gnl-cinco-barcos-en-rio-negro-ejecucion-mas-rapida-y-mayor-exportacion-de-petroleo/" target="_blank">Leer más sobre la noticia</a>
+            </article>
+        </section>
+
+        <aside>
+            <h2>Publicidad</h2>
+            <figure>
+                <img src="./imgs/netflix.webp" alt="Publicidad de Netflix" width="300">
+                <figcaption>Contrate Netflix solo por $5000 al mes</figcaption>
+            </figure>
+            <figure>
+                <img src="./imgs/rappi.webp" alt="Publicidad de Rappi" width="300">
+                <figcaption>Compra lo que necesite y sin salir de casa</figcaption>
+            </figure>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Infobae - Todos los derechos reservados</p>
+        <p>
+            <a href="mailto:contacto@infobae.com">Contacto</a> | 
+            <a href="#privacidad">Política de privacidad</a> | 
+            <a href="#terminos">Términos de uso</a>
+        </p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!--
+Ejercicio 3: Página de producto 
+
+Objetivo: Crear una página de producto para un producto online, utilizando etiquetas para destacar información importante. 
+
+
+
+Contenido: 
+
+    -Encabezado: Imagen del producto, nombre y precio. 
+
+Sección principal: 
+
+    -Artículo: Descripción del producto, características y beneficios. 
+
+    -Aside: Testimonios de clientes satisfechos. 
+
+    -Figure: Imagen del producto en uso. 
+
+    -Pie de página: Información de contacto, política de devolución y garantía. 
+
+
+
+Etiquetas a utilizar: 
+
+header, main, article, section, aside, figure, figcaption, footer 
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de producto </title>
+</head>
+<body>
+    <header>
+        <h1>Coca Cola</h1>
+        <figure>
+            <img src="./imgs/3080006_f.webp" alt="Coca Cola" width="200">
+            <figcaption>Botella de Coca Cola</figcaption>
+        </figure>
+        <p><strong>Precio:</strong>$2000</p>
+    </header>
+
+    <main>
+        <section>
+            <article>
+                <h2>Descripción del producto</h2>
+                <p>La Coca Cola es una bebida refrescante y burbujeante, perfecta para cualquier ocasión. Su sabor único y su icónica presentación la convierten en la elección favorita de millones de personas en todo el mundo.</p>
+            </article>
+            <article>
+                <h2>Características</h2>
+                <ul>
+                    <li>Sabor clásico y refrescante</li>
+                    <li>Disponible en diferentes tamaños</li>
+                    <li>Ideal para acompañar comidas o disfrutar sola</li>
+                </ul>
+            </article>
+            <article>
+                <h2>Beneficios</h2>
+                <ul>
+                    <li>Refresca y revitaliza</li>
+                    <li>Combina bien con una variedad de alimentos</li>
+                    <li>Perfecta para compartir en reuniones y celebraciones</li>
+                </ul>
+            </article>
+
+            <figure>
+                <img src="./imgs/persona1.webp" alt="Vasos con hielo y Coca-Cola servida en una mesa" width="400">
+                <figcaption>Disfrútala bien fría en tus comidas.</figcaption>
+            </figure>
+        </section>
+
+        <aside>
+            <h2>Testimonios</h2>
+            <p>"La Coca Cola es mi bebida favorita, siempre la elijo para mis comidas." - Juan P.</p>
+        
+            <p>"No hay nada como una Coca Cola bien fria en un dia caluroso." - Ana G.</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>Información de contacto: <a href="mailto:info@cocacola.com">info@cocacola.com</a></p>
+        <p>Política de devolución: 30 días para devolver el producto si no está satisfecho.</p>
+        <p>Garantía: Producto garantizado contra defectos de fabricación.</p>
+    </footer>
+</body>
+</html>

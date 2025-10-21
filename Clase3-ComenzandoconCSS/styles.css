@@ -1,0 +1,87 @@
+body {
+    background-color: #ffffff;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
+    padding: 0;
+}
+
+p {
+    font-size: 20px;
+    font-family: Tahoma;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+h1 {
+    color: #2bd471;    
+    margin: 15px ;
+    font-size: 62px;
+    text-decoration: underline;
+    text-align: center;
+}
+.titulos {
+    color: #2e15bd;
+    font-family: Georgia;
+    margin: 20px;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 40px;
+}
+.subtitulos{
+    color: #da771b;
+    text-align:left;
+    margin: 20px auto;
+    font-family: sans-serif;
+    font-size: 32px;
+}
+.desc1 {
+    color: #f13333;
+    overflow: hidden;
+    text-align: left;
+}
+
+.desc1 strong{
+    color: #aa1c1c;
+}
+
+.multimedial {
+    color: #9cf146;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: left;
+}
+
+.multimedial strong{
+    color: #7a9a50;
+}
+
+#diseñoweb {
+    color: #e99f9f;
+}   
+
+#diseñoweb strong{
+    color: #863434;
+}   
+
+#cursos-cortos {
+    color: #adaadf;
+}
+
+#cursos-cortos strong{
+    color: #6b689c;
+}
+
+#formacion-profesional {
+    color: #eb87d5;
+}
+
+#formacion-profesional strong {
+    color: #df5ccb;
+}

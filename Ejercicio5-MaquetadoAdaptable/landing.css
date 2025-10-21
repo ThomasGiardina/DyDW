@@ -1,0 +1,82 @@
+/* Estilos base para landing.html */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #4facfe;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.hero {
+  max-width: 600px;
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.hero button {
+  background-color: #fff;
+  color: #4facfe;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.hero button:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
+}
+
+/* ========================================
+EJERCICIOS: Añade tus media queries aquí
+======================================== */
+
+/*Cambia el color de fondo del cuerpo a un tono muy oscuro (por ejemplo, #1a1a1a) cuando el ancho 
+de la pantalla sea de 980px o más (ligeramente distinto a 960px para variar).*/
+@media(min-width:980px){
+  body{
+    background-color: #1a1a1a;
+  }
+}
+
+/*Aumenta el tamaño de la fuente del título principal (h1) a 2.5rem cuando el ancho de la 
+pantalla sea de 590px o menos (casi igual a 600px, pero con variación sutil).*/
+@media(max-width:590px){
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+}
+
+/*Aumenta el margen vertical entre los elementos dentro del contenedor .hero a 2rem cuando el ancho 
+sea de 1220px o más (variación de 1200px para evitar repetición exacta).*/
+@media(min-width:1220px){
+  .hero > * + * {
+    margin-top: 2rem;
+  }
+}

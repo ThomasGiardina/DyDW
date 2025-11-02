@@ -5,3 +5,90 @@ h1{
 }
 
 
+/* ——— Tarjetas más largas y estilo ——— */
+.testi-card{
+  height:100%;
+  min-height: 220px;            /* ← más largo */
+  background:#1b1b1b;
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:18px;
+  padding:32px 28px 24px;       /* más padding para que “respire” */
+  text-align:center;
+  box-shadow:0 10px 28px rgba(0,0,0,.5);
+}
+.testi-card p{
+  margin:0 auto 10px;
+  max-width: 620px;             /* texto en una línea amplia */
+  color:#dcdcdc; font-style:italic;
+}
+.avatar{
+  width:72px;height:72px;border-radius:50%;
+  overflow:hidden;margin:-48px auto 14px;
+  border:3px solid #1b1b1b; outline:3px solid rgba(255,255,255,.12);
+  background:#2a2a2a;
+}
+.name{ font-weight:800; letter-spacing:.2px; }
+.sig{ color:#9be676; }
+.sig-pink{ color:#ff46d2; }
+
+/* Efecto neón de la destacada */
+.testi-card.highlight{
+  border-color:#ff46d2;
+  box-shadow:
+    0 0 0 2px rgba(255,70,210,.25),
+    0 0 36px rgba(255,70,210,.35),
+    0 14px 38px rgba(0,0,0,.6);
+}
+
+/* Asegurar 1/2/3 columnas responsive */
+@media (min-width:768px){ .col-md-6{ flex:0 0 auto; width:50%; } }
+@media (min-width:992px){ .col-lg-4{ flex:0 0 auto; width:33.333333%; } }
+
+/* Ajustes del carrusel en fondo oscuro */
+#crowdCarousel .carousel-inner{ padding:28px 0; }
+#crowdCarousel .carousel-control-prev-icon,
+#crowdCarousel .carousel-control-next-icon{ filter: invert(1); }
+/* ——— Tarjetas más largas y estilo ——— */
+.testi-card{
+  height:100%;
+  min-height: 220px;            /* ← más largo */
+  background:#1b1b1b;
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:18px;
+  padding:32px 28px 24px;       /* más padding para que “respire” */
+  text-align:center;
+  box-shadow:0 10px 28px rgba(0,0,0,.5);
+}
+.testi-card p{
+  margin:0 auto 10px;
+  max-width: 620px;             /* texto en una línea amplia */
+  color:#dcdcdc; font-style:italic;
+}
+.avatar{
+  width:72px;height:72px;border-radius:50%;
+  overflow:hidden;margin:-48px auto 14px;
+  border:3px solid #1b1b1b; outline:3px solid rgba(255,255,255,.12);
+  background:#2a2a2a;
+}
+.name{ font-weight:800; letter-spacing:.2px; }
+.sig{ color:#9be676; }
+.sig-pink{ color:#ff46d2; }
+
+/* Efecto neón de la destacada */
+.testi-card.highlight{
+  border-color:#ff46d2;
+  box-shadow:
+    0 0 0 2px rgba(255,70,210,.25),
+    0 0 36px rgba(255,70,210,.35),
+    0 14px 38px rgba(0,0,0,.6);
+}
+
+/* Asegurar 1/2/3 columnas responsive */
+@media (min-width:768px){ .col-md-6{ flex:0 0 auto; width:50%; } }
+@media (min-width:992px){ .col-lg-4{ flex:0 0 auto; width:33.333333%; } }
+
+/* Ajustes del carrusel en fondo oscuro */
+#crowdCarousel .carousel-inner{ padding:28px 0; }
+#crowdCarousel .carousel-control-prev-icon,
+#crowdCarousel .carousel-control-next-icon{ filter: invert(1); }
+

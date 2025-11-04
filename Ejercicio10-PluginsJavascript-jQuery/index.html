@@ -12,9 +12,9 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.min.css"/>
 </head>
-<body>
+<body class="bg-dark">
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-dark p-4">
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-dark-custom p-4">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img src="./imgs/6878efc93ccc85f4af188014_oficial-logo 1.png" alt="logo del Lollapalooza" width="200" height="auto">
@@ -39,16 +39,23 @@
         </nav>
     </header>    
 
-    <section class="bg-secondary py-5">
+    <section id="inicio" class="bg-secondary-subtle py-5">
         <div class="container">
-            <div class="row d-flex justify-content-center align-items-center">
-                <div class="col-md-5 text-start text-white py-5 me-5">
-                    <h1 class="bold mb-5 fs-1">Lollapalooza Argentina 2026</h1>
-                    <p class="mb-5">El Lollapalooza Argentina 2026 llega con más fuerza que nunca al Hipódromo de San Isidro. Tres días de pura música, energía y experiencias únicas que reúnen a los artistas más importantes del mundo y a miles de fanáticos. Con escenarios vibrantes, propuestas gastronómicas, arte urbano y un ambiente inolvidable, el festival promete superar todas las expectativas.</p>
-                    <a href="https://www.allaccess.com.ar/event/lollapalooza-2026-venta-general" target="_blank"><button class="btn btn-outline-light">Comprá tu entrada</button></a>
+            <div class="row align-items-center gy-4">
+                <div class="col-lg-6">
+                    <span class="badge text-bg-white rounded-pill mb-2">Marzo 2026 · Hipódromo de San Isidro</span>
+                    <h1 class="display-5 fw-bold mb-3 text-white">Lollapalooza Argentina 2026</h1>
+                    <p class="lead text-body-secondary text-white">
+                        Tres días de música, energía y experiencias únicas con artistas de todo el mundo.
+                    </p>
+                    <div class="d-flex gap-2 mt-4">
+                        <a class="btn btn-light btn-lg" target="_blank" href="https://www.allaccess.com.ar/event/lollapalooza-2026-venta-general">Comprá tu entrada</a>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <img src="./imgs/lineupLolla.png" alt="" width="500">
+                <div class="col-lg-6">
+                    <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow">
+                        <img src="./imgs/lineupLolla.png" class="w-100 h-100 object-fit-cover" alt="Lineup Lollapalooza 2026">
+                    </div>
                 </div>
             </div>
         </div>
@@ -56,18 +63,21 @@
 
     <section class="bg-dark text-white text-center py-5">
         <div class="container">
-            <h1 class="mb-4">¡Faltan para el Lollapalooza Argentina 2026!</h1>
-            <div id="clock" class="d-flex justify-content-center mt-5"></div>
+            <div class="surface-card countdown-card mx-auto" style="max-width: 920px;">
+                <h2 class="display-title text-uppercase mb-3">¡Comienza la cuenta regresiva!</h2>
+                <p class="text-secondary small mb-4">Marzo 13, 14 y 15 de 2026 · Hipódromo de San Isidro</p>
+                <div id="clock" class="justify-content-center"></div>
+            </div>
         </div>
     </section>
 
     <section class="text-center py-5">
         <div class="container">
-            <h2>Experimenta la magia</h2>
+            <h2 class="section-title text-uppercase"><span class="accent-green">Revive</span><span class="text-white"> la magia</span></h2>
             <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
                 <div class="col">
                     <a href="./imgs/lollapalooza_2026_este_es_el_line_up_completo_del_festival_en_argentina.png.webp"
-                        class="image-popup-vertical-fit card bg-dark text-white border-0 rounded-4 overflow-hidden d-block position-relative"
+                        class="image-popup-vertical-fit media-card card bg-dark text-white border-0 rounded-4 overflow-hidden d-block position-relative"
                         title="Main Stage Lights">
                         <img src="./imgs/lollapalooza_2026_este_es_el_line_up_completo_del_festival_en_argentina.png.webp"
                             class="w-100"
@@ -80,9 +90,9 @@
                         </div>
                     </a>
                 </div>
-                <div class="col">
+                <div class="col w">
                     <a href="./imgs/lollapalooza2.webp"
-                        class="image-popup-vertical-fit card bg-dark text-white border-0 rounded-4 overflow-hidden d-block position-relative"
+                        class="image-popup-vertical-fit media-card card bg-dark text-white border-0 rounded-4 overflow-hidden d-block position-relative"
                         title="Main Stage Lights">
                         <img src="./imgs/lollapalooza2.webp"
                             class="w-100"
@@ -97,7 +107,7 @@
                 </div>
                 <div class="col">
                     <a href="./imgs/lollapalooza3.webp"
-                        class="image-popup-vertical-fit card bg-dark text-white border-0 rounded-4 overflow-hidden d-block position-relative"
+                        class="image-popup-vertical-fit media-card card bg-dark text-white border-0 rounded-4 overflow-hidden d-block position-relative"
                         title="Main Stage Lights">
                         <img src="./imgs/lollapalooza3.webp"
                             class="w-100"
@@ -114,103 +124,99 @@
         </div>
     </section>
 
-    <section class="py-5">
+    <section id="testimonios" class="py-5 bg-dark">
         <div class="container">
-            <div id="crowdCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="6000" data-bs-touch="true">
-                <div class="carousel-indicators">
+            <div class="surface-card px-2 px-md-4 py-4">
+                <h2 class="section-title text-center text-uppercase mb-4">From the <span class="accent-green">Crowd</span></h2>
+                <div id="crowdCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="6000" data-bs-touch="true">
+                    <div class="carousel-indicators">
                     <button type="button" data-bs-target="#crowdCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#crowdCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#crowdCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
+                    </div>
 
-                <div class="carousel-inner">
+                    <div class="carousel-inner">
+
                     <div class="carousel-item active">
                         <div class="row g-4 justify-content-center">
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="testi-card">
-                                    <div class="avatar"><img src="https://i.pravatar.cc/128?img=14" width="72" height="72" alt=""></div>
-                                        <p>“Absolutely unforgettable! The energy, the music, the people… Can’t wait for next year!”</p>
-                                    <div class="name sig">– Lucas M.</div>
-                                </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card text-center border-0 shadow-sm rounded-4 h-100 p-3">
+                            <img src="https://i.pravatar.cc/128?img=14" width="72" height="72" class="rounded-circle mx-auto mt-2" alt="Avatar Lucas">
+                            <div class="card-body">
+                                <p class="card-text">“Absolutely unforgettable! The energy, the music, the people… Can’t wait for next year!”</p>
+                                <small class="text-body-secondary">— Lucas M.</small>
                             </div>
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="testi-card highlight">
-                                    <div class="avatar"><img src="https://i.pravatar.cc/128?img=32" width="72" height="72" alt=""></div>
-                                        <p>“My friends and I had the time of our lives. Lineup was insane and the vibes perfect.”</p>
-                                    <div class="name sig-pink">– Sofia R.</div>
-                                </div>
                             </div>
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="testi-card">
-                                    <div class="avatar"><img src="https://i.pravatar.cc/128?img=5" width="72" height="72" alt=""></div>
-                                        <p>“From food trucks to art, it’s more than music — a full cultural festival.”</p>
-                                    <div class="name sig">– Mateo G.</div>
-                                </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card text-center border-0 shadow-sm rounded-4 h-100 p-3 bg-body-tertiary">
+                            <img src="https://i.pravatar.cc/128?img=32" width="72" height="72" class="rounded-circle mx-auto mt-2" alt="Avatar Sofía">
+                            <div class="card-body">
+                                <p class="card-text">“My friends and I had the time of our lives. Lineup was insane and the vibes perfect.”</p>
+                                <small class="text-body-secondary">— Sofía R.</small>
                             </div>
+                            </div>
+                        </div>
                         </div>
                     </div>
 
                     <div class="carousel-item">
                         <div class="row g-4 justify-content-center">
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="testi-card">
-                                    <div class="avatar"><img src="https://i.pravatar.cc/128?img=8" width="72" height="72" alt=""></div>
-                                    <p>“Los escenarios y el sonido fueron de otro nivel. Organización impecable.”</p>
-                                    <div class="name sig">– Camila P.</div>
-                                </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card text-center border-0 shadow-sm rounded-4 h-100 p-3">
+                            <img src="https://i.pravatar.cc/128?img=8" width="72" height="72" class="rounded-circle mx-auto mt-2" alt="Avatar Camila">
+                            <div class="card-body">
+                                <p class="card-text">“Los escenarios y el sonido fueron de otro nivel. Organización impecable.”</p>
+                                <small class="text-body-secondary">— Camila P.</small>
                             </div>
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="testi-card highlight">
-                                    <div class="avatar"><img src="https://i.pravatar.cc/128?img=20" width="72" height="72" alt=""></div>
-                                    <p>“La mejor vibra del año. Hice nuevos amigos y descubrí bandas increíbles.”</p>
-                                    <div class="name sig-pink">– Diego A.</div>
-                                </div>
                             </div>
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="testi-card">
-                                    <div class="avatar"><img src="https://i.pravatar.cc/128?img=48" width="72" height="72" alt=""></div>
-                                    <p>“Volvería sin dudarlo. Seguridad y logística 10/10.”</p>
-                                    <div class="name sig">– Laura J.</div>
-                                </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card text-center border-0 shadow-sm rounded-4 h-100 p-3 bg-body-tertiary">
+                            <img src="https://i.pravatar.cc/128?img=20" width="72" height="72" class="rounded-circle mx-auto mt-2" alt="Avatar Diego">
+                            <div class="card-body">
+                                <p class="card-text">“La mejor vibra del año. Hice nuevos amigos y descubrí bandas increíbles.”</p>
+                                <small class="text-body-secondary">— Diego A.</small>
                             </div>
+                            </div>
+                        </div>
                         </div>
                     </div>
 
                     <div class="carousel-item">
                         <div class="row g-4 justify-content-center">
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="testi-card">
-                                    <div class="avatar"><img src="https://i.pravatar.cc/128?img=2" width="72" height="72" alt=""></div>
-                                    <p>“Ambiente familiar y festivo. Una experiencia para repetir.”</p>
-                                    <div class="name sig">– Andrés T.</div>
-                                </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card text-center border-0 shadow-sm rounded-4 h-100 p-3 bg-body-tertiary">
+                            <img src="https://i.pravatar.cc/128?img=25" width="72" height="72" class="rounded-circle mx-auto mt-2" alt="Avatar Sofía L">
+                            <div class="card-body">
+                                <p class="card-text">“Lineup soñado y cero filas para entrar. ¡Increíble!”</p>
+                                <small class="text-body-secondary">— Sofía L.</small>
                             </div>
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="testi-card highlight">
-                                    <div class="avatar"><img src="https://i.pravatar.cc/128?img=25" width="72" height="72" alt=""></div>
-                                    <p>“Lineup soñado y cero filas para entrar. ¡Increíble!”</p>
-                                    <div class="name sig-pink">– Sofía L.</div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="testi-card">
-                                    <div class="avatar"><img src="https://i.pravatar.cc/128?img=58" width="72" height="72" alt=""></div>
-                                    <p>“Iluminación y visuales brutales. Se siente otro mundo.”</p>
-                                    <div class="name sig">– Bruno Q.</div>
-                                </div>
                             </div>
                         </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card text-center border-0 shadow-sm rounded-4 h-100 p-3">
+                            <img src="https://i.pravatar.cc/128?img=58" width="72" height="72" class="rounded-circle mx-auto mt-2" alt="Avatar Bruno">
+                            <div class="card-body">
+                                <p class="card-text">“Iluminación y visuales brutales. Se siente otro mundo.”</p>
+                                <small class="text-body-secondary">— Bruno Q.</small>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
                     </div>
-                </div>
 
-                <button class="carousel-control-prev" type="button" data-bs-target="#crowdCarousel" data-bs-slide="prev">
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#crowdCarousel" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Anterior</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#crowdCarousel" data-bs-slide="next">
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#crowdCarousel" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Siguiente</span>
-                </button>
+                    </button>
+                </div>
             </div>
         </div>
     </section>
@@ -219,6 +225,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.min.js"></script>
     <script src="./scrip.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <footer class="site-footer mt-5">
+        <div class="container py-4 d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+            <div class="d-flex align-items-center gap-3">
+                <img src="./imgs/6878efc93ccc85f4af188014_oficial-logo 1.png" alt="Lollapalooza" height="28">
+                <small class="text-secondary">© 2026 Lollapalooza Argentina</small>
+            </div>
+            <ul class="nav small">
+                <li class="nav-item"><a class="nav-link px-2 text-white-50" href="#">Términos</a></li>
+                <li class="nav-item"><a class="nav-link px-2 text-white-50" href="#">Privacidad</a></li>
+                <li class="nav-item"><a class="nav-link px-2 text-white-50" href="#">Contacto</a></li>
+            </ul>
+        </div>
+    </footer>
 
 </body>
 </html>

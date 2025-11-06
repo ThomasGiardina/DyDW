@@ -1,4 +1,3 @@
-/* ========== 1) Smooth scroll + cerrar navbar en mobile (sin jQuery) ========== */
 document.querySelectorAll('a[href^="#"]').forEach(a=>{
   a.addEventListener('click', e=>{
     const id = a.getAttribute('href');
@@ -7,7 +6,6 @@ document.querySelectorAll('a[href^="#"]').forEach(a=>{
       if(el){
         e.preventDefault();
         el.scrollIntoView({ behavior:'smooth', block:'start' });
-        // cerrar el menú si está abierto
         const nav = document.getElementById('mainNav');
         if(nav?.classList.contains('show')) new bootstrap.Collapse(nav).hide();
       }
@@ -15,12 +13,10 @@ document.querySelectorAll('a[href^="#"]').forEach(a=>{
   });
 });
 
-/* ========== 2) Cuenta regresiva con FlipClock (si está) o fallback (texto) ========== */
 (function initCountdown(){
   const clockEl = document.getElementById('clock');
   if(!clockEl) return;
 
-  // Evento: 13 marzo 2026 12:00 en Buenos Aires (UTC-3)
   const eventDate = new Date("2026-03-13T12:00:00-03:00").getTime();
   const now = Date.now();
   const seconds = Math.max(0, Math.floor((eventDate - now) / 1000));
@@ -33,7 +29,6 @@ document.querySelectorAll('a[href^="#"]').forEach(a=>{
       $('#clock').FlipClock(seconds, { clockFace: 'DailyCounter', countdown: true });
     });
   }else{
-    // Fallback minimalista (texto)
     const fmt = (n)=> n.toString().padStart(2,'0');
     const box = document.createElement('div');
     box.className = 'text-center';
@@ -57,7 +52,8 @@ document.querySelectorAll('a[href^="#"]').forEach(a=>{
   }
 })();
 
-/* ========== 3) Magnific Popup (si está) ========== */
+
+
 (function initMagnific(){
   const hasjQuery = typeof window.jQuery !== 'undefined';
   const hasMagnific = hasjQuery && !!jQuery.fn.magnificPopup;

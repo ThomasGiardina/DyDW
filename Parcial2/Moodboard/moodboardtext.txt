@@ -1,0 +1,11 @@
+Business: paleta tech y limpia para portfolio personal
+Keywords: modern, tech, creative, clean
+Main Font: Inter
+Body Font: Inter
+Font Justification: Inter is a modern and highly legible font, ideal for a tech-focused portfolio. It provides excellent readability for both headings and body text, ensuring a clean and professional look. Its versatility makes it suitable for various design elements.
+Primary Color: #1E88E5
+Secondary Color: #E3F2FD
+Accent Color: #00ACC1
+Palette Justification: The primary color, a vibrant blue, represents innovation and technology, while the secondary color, a light blue, adds a sense of cleanliness and sophistication. The accent color, a teal hue, provides a modern and creative touch, making the palette both professional and visually engaging. This palette conveys a sense of trust, reliability, and innovation.
+Brand Tagline: Crafting digital experiences
+Picture: https://www.pexels.com/photo/a-person-holding-white-printer-paper-7792533/

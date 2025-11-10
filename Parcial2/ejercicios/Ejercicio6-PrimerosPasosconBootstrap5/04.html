@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Grillas y alineaciones</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .bloc {
+        min-height: 90px;
+        border-radius: 0;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        border: none;
+        }
+
+        .header   { background: #efc4cf; color:#1b1b1b; }   
+        .box-1    { background: #b33a3a; color:#111; }      
+        .box-2    { background: #aafcff; color:#111; }      
+        .box-3    { background: #b33a3a; color:#111; }      
+        .footer-1,
+        .footer-2 { background: #e9b235; color:#111; }      
+
+        @media (min-width: 576px) {
+        .header { background:#9ffcff; }                  
+        .box-1  { background:#b33a3a; }
+        .box-2  { background:#b33a3a; }
+        .box-3  { background:#a6f74d; }                   
+        }
+
+        @media (min-width: 768px) {
+        .header { background:#4c7f55; color:#1b1b1b; }       
+        .box-1, .box-2, .box-3 { background:#b33a3a; color:#111; } 
+        }
+
+        .gap-y > [class*="col"] { margin-bottom: 1rem; }
+    </style>
+</head>
+<body class="bg-light">
+    <div class="container py-4">
+        <div class="row justify-content-center gap-y">
+            <div class="col-12">
+                <div class="bloc header justify-content-center justify-content-sm-start px-3">
+                Header
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center gap-y">
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="bloc box-1">
+                    <div class="w-100 text-start text-sm-start text-md-center">1</div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="bloc box-2">
+                    <div class="w-100 text-center text-sm-end text-md-center">2</div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="bloc box-3">
+                    <div class="w-100 text-end text-sm-center text-md-center">3</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center gap-y">
+            <div class="col-12 col-md-6">
+                <div class="bloc footer-1 px-3">
+                    <div class="w-100 text-center text-md-end pe-md-0">Footer 1</div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="bloc footer-2 px-3">
+                    <div class="w-100 text-center text-sm-center text-md-start">Footer 2</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
